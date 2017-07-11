@@ -13,10 +13,16 @@ When required, PF4J can be forced to use a single class loader for all plugins (
 
 **TODO**: add other ideas
 
+PF4J vs JPMS (conceptual)
+-------------------
+- In JPMS, the syntax for indicating dependency in a module is asymmetric - you export a package, but require
+a module. 
+- In JPMS you export only some packages from a module.
+
 Possible issues
 -------------------
-- PF4J uses [SemVer](http://semver.org/) but JPMS not.
-A possible solution is to abstract the work with versions in a `VersionManager` (interface) and to have the possibility to inject a custom version manager in `PluginManager`.
+- ~~PF4J uses [SemVer](http://semver.org/) but JPMS not.
+A possible solution is to abstract the work with versions in a `VersionManager` (interface) and to have the possibility to inject a custom version manager in `PluginManager`.~~ Resolved by https://github.com/decebals/pf4j/pull/155.
 
 Resources
 -------------------
