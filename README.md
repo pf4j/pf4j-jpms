@@ -23,6 +23,7 @@ Possible issues
 -------------------
 - ~~PF4J uses [SemVer](http://semver.org/) but JPMS not.
 A possible solution is to abstract the work with versions in a `VersionManager` (interface) and to have the possibility to inject a custom version manager in `PluginManager`.~~ Resolved by https://github.com/decebals/pf4j/pull/155.
+- find a resource
 
 Resources
 -------------------
